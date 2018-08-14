@@ -5,6 +5,11 @@ using System.Text;
 
 namespace QDatas.Core
 {
+    /// <summary>
+    /// Q's Data Helper
+    /// get from https://github.com/chinaq/QData.git
+    /// </summary>
+
     public class QData
     {
         // 16 进制 string 转 int

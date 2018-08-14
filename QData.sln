@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QDatas.Core", "QDatas.Core\QDatas.Core.csproj", "{733BD2BB-9B93-4367-8011-1D38C9047D88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QDatas.Core", "QDatas.Core\QDatas.Core.csproj", "{733BD2BB-9B93-4367-8011-1D38C9047D88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QDatas.UnitTest", "QDatas.UnitTest\QDatas.UnitTest.csproj", "{D4D5AEB3-C7A8-43DA-9E5C-72F37F462A22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QDatas.UnitTest", "QDatas.UnitTest\QDatas.UnitTest.csproj", "{D4D5AEB3-C7A8-43DA-9E5C-72F37F462A22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9714977D-7422-4AB0-8EFD-C18285C4E2DF}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
