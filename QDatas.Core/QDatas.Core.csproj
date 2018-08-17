@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.1.0</Version>
+    <PackageId>QData</PackageId>
+    <Authors>Q</Authors>
+    <Company />
+    <Product>QData</Product>
+    <Description>Q's Data Convert Helper, from bytes to int, long, float, string and vice-versa</Description>
+    <PackageProjectUrl>https://github.com/chinaq/QData</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/chinaq/QData</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>
