@@ -17,13 +17,13 @@ build:
 
 
 test_script:
-- ps: OpenCover.Console.exe -register:user -target:"vstest.console.exe" -targetargs:".\QDatas.UnitTest\bin\Debug\netcoreapp2.1\QDatas.UnitTest.dll" -filter:"+[QDatas*]* -[QDatas.UnitTest]*" -output:".\QData_coverage.xml" -oldstyle
+- ps: OpenCover.Console.exe -register:user -target:"vstest.console.exe" -targetargs:".\QData.UnitTest\bin\Debug\netcoreapp2.1\QData.UnitTest.dll" -filter:"+[QData*]* -[QData.UnitTest]*" -output:".\QData_coverage.xml" -oldstyle
 - ps: codecov -f ".\QData_coverage.xml"
 
 
 
 artifacts:
-- path: '.\QDatas.Core\bin\Debug\QData.*.nupkg'
+- path: '.\QData.Core\bin\Debug\QData.*.nupkg'
 
 
 
