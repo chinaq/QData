@@ -9,8 +9,8 @@ init:
 
 before_build:
 - ps: nuget restore -Verbosity quiet
-- ps: choco install opencover.portable --no-progress -y
-- ps: choco install codecov --no-progress -y
+- ps: choco install opencover.portable --no-progress --y
+- ps: choco install codecov --no-progress --y
 build:
   verbosity: minimal
 
