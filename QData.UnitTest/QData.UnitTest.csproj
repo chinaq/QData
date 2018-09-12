@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\QDatas.Core\QDatas.Core.csproj" />
+    <ProjectReference Include="..\QData.Core\QData.Core.csproj" />
   </ItemGroup>
 
 </Project>

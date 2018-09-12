@@ -3,14 +3,14 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 
-namespace QDatas.Core
+namespace QData.Core
 {
     /// <summary>
     /// Q's Data Helper
     /// get from https://github.com/chinaq/QData.git
     /// </summary>
 
-    public class QData
+    public class Conv
     {
         // 16 进制 string 转 int
         public static int StrHexToInt(string strHex)
@@ -27,12 +27,12 @@ namespace QDatas.Core
         // 16 进制 bcd 转 long
         public static long BytesBcdToLong(byte[] bytes, int start, int len)
         {
-            return QData.StrToLong(QData.BytesToStrHex(bytes, start, len));
+            return Conv.StrToLong(Conv.BytesToStrHex(bytes, start, len));
         }
 
         public static long BytesBcdToLong(byte[] bytes)
         {
-            return QData.StrToLong(QData.BytesToStrHex(bytes));
+            return Conv.StrToLong(Conv.BytesToStrHex(bytes));
         }
 
 
