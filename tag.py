@@ -21,8 +21,11 @@ def main():
 
         # add tag on git
         repo = Repo(os.path.abspath("./"))
-        repo.create_tag("v"+sys.argv[1])
+        new_tag = repo.create_tag("v"+sys.argv[1])
         print(list(reversed(repo.tags))[0])
+
+        # push tag
+        repo.remotes.origin.push(new_tag)
 
 if __name__ == "__main__":
     main()
