@@ -19,17 +19,15 @@ def main():
         tree.write(proj_file)
         print(version.tag, version.text)
 
-        # add tag on git
+        # add tag and push
         repo = Repo(os.path.abspath("./"))
+        repo.git.commit('-am', 'v update')
         new_tag = repo.create_tag("v"+sys.argv[1])
-        print(list(reversed(repo.tags))[0])
-
-        # push tag
+        repo.remotes.origin.push()
         repo.remotes.origin.push(new_tag)
+        print("pushed", new_tag)
 
 if __name__ == "__main__":
     main()
-
-
 
 
